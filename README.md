@@ -52,7 +52,7 @@ Get laptop
 Download Visual Studio C++  
 Go to https://github.com/IntelRealSense/librealsense/releases  
 Go to Assets  
-Download latest Intel.RealSense.SDK-WIN10-2.24.0939.exe  
+Download latest SDK i.e. Intel.RealSense.SDK-WIN10-2.24.0939.exe  
 Go to Local Disk (C:) -> Program Files (x86) -> IntelRealSense SDK 2.0  
 Open examples by clicking on multicam.vcxproj  
 Replace rs-multicam.cpp code with own rs-multicam.cpp code  
@@ -73,6 +73,12 @@ Type: vcpkg integrate install (integrates vcpkg with Visual Studio)
 ## Add OpenCV to Visual Studio
 Project >> align-save properties >> C/C++ >> General >> Additional Include Directories  
   Add C:\Program Files\vcpkg-master\installed\x64-windows\include;  
+
+## Run Windows 10 Metadata Script
+File found here:
+https://github.com/IntelRealSense/librealsense/blob/master/scripts/realsense_metadata_win10.ps1
+Instructions found here:
+https://github.com/IntelRealSense/librealsense/blob/master/doc/installation_windows.md
 
 ## Hardware
 Attach camera sync cable https://www.mouser.com/pdfdocs/Multiple_Camera_WhitePaper_rev11.pdf  
